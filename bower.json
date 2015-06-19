@@ -1,0 +1,27 @@
+{
+  "name": "backbone-singleton",
+  "version": "0.0.0",
+  "homepage": "https://github.com/ryanbeard/backbone-singleton",
+  "description": "Convert Backbone classes seamlessly into singletons",
+  "main": "backbone-singleton.js",
+  "moduleType": [
+    "amd",
+    "globals",
+    "node"
+  ],
+  "keywords": [
+    "backbone",
+    "singleton"
+  ],
+  "authors": [
+    "Ryan Beard"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
