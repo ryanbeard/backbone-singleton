@@ -79,7 +79,7 @@ var m2 = new MySingletonModel();  // === m1
 
 ## Notes
 
-### Referring with arguments
+### Instantiating with arguments
 When you instantiate the singleton, it's possible to pass in arguments that you wish the instance to be created with.
 If the instance has already been created however, passing in arguments is irrelevant and they will be lost.
 This may create unexpected behaviour, leaving you wondering what happened to the arguments passed in.
