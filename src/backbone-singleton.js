@@ -67,5 +67,3 @@
         }
     };
 }));
-
-// TODO: Make options.arguments also available for lazily-loaded singletons
