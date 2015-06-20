@@ -65,6 +65,9 @@ var m2 = new MySingletonModel();  // === m1
 
 
 ## Immediately instantiated singleton
+You may sometimes wish for the singleton to be instantiated immediately rather than waiting for when it's first used.
+This is possible by setting the `instantiate` flag via the options parameter.
+
 Create an immediately instantiated singleton:
 ```
 var MySingletonModel = BackboneSingleton(Backbone.Model.extend({
