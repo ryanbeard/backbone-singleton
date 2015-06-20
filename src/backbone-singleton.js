@@ -25,11 +25,8 @@
         // Wrapper around the class. Allows us to call new without generating an error.
         var WrappedClass = function() {
             if (!BackboneClass.instance) {
-                // Keep a reference to the arguments passed in to the singleton's instatiation.
-                var args = arguments;
-
-                // Proxy class that allows us to pass through all arguments on singleton instatiation.
-                var F = function () {
+                // Proxy class that allows us to pass through all arguments on singleton instantiation.
+                var F = function (args) {
                     return BackboneClass.apply(this, args);
                 };
 
@@ -43,8 +40,8 @@
                 // Connect the proxy class to its counterpart class.
                 F.prototype = BackboneClass.prototype;
 
-                // Instantiate the proxy, then store the instance.
-                (new F()).__setInstance();
+                // Instantiate the proxy, passing through any arguments, then store the instance.
+                (new F(arguments.length ? arguments : options.arguments)).__setInstance();
             }
             else {
                 // Make sure we're not trying to instantiate it with arguments again.
@@ -70,3 +67,5 @@
         }
     };
 }));
+
+// TODO: Make options.arguments also available for lazily-loaded singletons
