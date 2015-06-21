@@ -1,5 +1,5 @@
 {
-  "name": "backbone-singleton",
+  "name": "BackboneSingleton",
   "version": "1.0.0",
   "description": "Convert Backbone classes seamlessly into singletons",
   "main": "backbone-singleton.js",

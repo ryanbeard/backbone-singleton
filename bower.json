@@ -1,5 +1,5 @@
 {
-  "name": "backbone-singleton",
+  "name": "BackboneSingleton",
   "version": "1.0.0",
   "homepage": "https://github.com/ryanbeard/backbone-singleton",
   "description": "Convert Backbone classes seamlessly into singletons",
