@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "homepage": "https://github.com/ryanbeard/backbone-singleton",
   "description": "Convert Backbone classes seamlessly into singletons",
-  "main": "backbone-singleton.js",
+  "main": "dist/backbone-singleton.js",
   "moduleType": [
     "amd",
     "globals",
