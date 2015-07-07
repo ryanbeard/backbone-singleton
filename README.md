@@ -1,14 +1,22 @@
 <h1 align="center">BackboneSingleton</h1>
 
 # About BackboneSingleton
+In a nut-shell, it lets you do this:
+```
+var m1 = new FooModel();
+var m2 = new FooModel();
+// m1 === m2
+```
+BackboneSingleton allows you to return the same instance of a Backbone class regardless of calls to `new`, allowing you 
+to treat regular Backbone classes and BackboneSingletons in exactly the same way.
 
-This module allows for the creation of Backbone classes as singletons. Traditional approaches would have you either 
-return the class already instantiated, or for lazy instantiation, wrapped in a function which then requires you to 
-call `MySingleton.getInstance()`. I don't like this, I want to have my cake and eat it!
+Traditional approaches would have you either return the class already instantiated, or for lazy instantiation, wrapped 
+in a function which then requires you to call `MySingleton.getInstance()`. I don't like this, I want to have my cake and
+eat it!
 
-With this approach, you can define a singleton as lazily-instantiated, or immediately instantiated and instantiate it 
-in the same way as you would with regular Backbone classes (e.g. `new MySingleton()`) but always get the same instance 
-back.
+With the BackboneSingleton approach, you can define a singleton as lazily-instantiated, or immediately-instantiated but 
+treat it in the same way as you would with regular Backbone classes (e.g. `new MySingleton()`) and always get the same 
+instance back!
 
 # API
 
