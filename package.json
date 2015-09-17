@@ -1,8 +1,8 @@
 {
-  "name": "BackboneSingleton",
+  "name": "backbone-singleton",
   "version": "1.0.0",
   "description": "Convert Backbone classes seamlessly into singletons",
-  "main": "backbone-singleton.js",
+  "main": "dist/backbone-singleton.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
